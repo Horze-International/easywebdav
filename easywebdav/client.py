@@ -7,8 +7,8 @@ from collections import namedtuple
 py_majversion, py_minversion, py_revversion = platform.python_version_tuple()
 
 if py_majversion == '2':
-    from http.client import responses as HTTP_CODES
-    from urllib.parse import urlparse
+    from httplib import responses as HTTP_CODES
+    from urlparse import urlparse
 else:
     from http.client import responses as HTTP_CODES
     from urllib.parse import urlparse
